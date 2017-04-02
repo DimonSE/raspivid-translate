@@ -1,4 +1,4 @@
-OBJS=RaspiCamControl.o RaspiCLI.o RaspiPreview.o RaspiStill.o
+OBJS=RaspiCamControl.o RaspiCLI.o RaspiPreview.o
 BIN=raspicam.bin
 LDFLAGS+=-lmmal -lmmal_core -lmmal_util
 

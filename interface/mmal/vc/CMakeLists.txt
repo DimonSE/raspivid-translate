@@ -5,12 +5,6 @@ add_library(mmal_vc_client ${LIBRARY_TYPE} mmal_vc_client.c mmal_vc_shm.c mmal_v
 
 target_link_libraries(mmal_vc_client vchiq_arm vcos vcsm)
 
-if(BUILD_MMAL_APPS)
-add_executable(mmal_vc_diag mmal_vc_diag.c)
-target_link_libraries(mmal_vc_diag mmal mmal_vc_client debug_sym vcos)
-install(TARGETS mmal_vc_diag RUNTIME DESTINATION bin)
-endif(BUILD_MMAL_APPS)
-
 include_directories ( ../../../host_applications/linux/libs/sm )
 
 install(TARGETS mmal_vc_client DESTINATION lib)

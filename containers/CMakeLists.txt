@@ -119,6 +119,3 @@ set(container_readers ${container_readers} reader_metadata_id3)
 if (${LIBRARY_TYPE} STREQUAL STATIC)
 target_link_libraries(containers ${container_readers} ${container_writers})
 endif (${LIBRARY_TYPE} STREQUAL STATIC)
-
-# Test apps
-add_subdirectory(test)

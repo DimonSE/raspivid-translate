@@ -11,9 +11,7 @@ set (CMAKE_SHARED_LINKER_FLAGS "-u vc_gpuserv_init ${CMAKE_SHARED_LINKER_FLAGS}"
 
 include_directories( ../../../.. 
 		     ../../../../interface/vcos/${VCOS_PLATFORM}
-		     ../../../../host_support/linux/added/include
-		     ../../../../host_applications/vmcs/test_apps/iltest
-                     ../../../../host_applications/framework/common )
+		     ../../../../host_support/linux/added/include)
 
 add_library(bcm_host ${SHARED} bcm_host.c 
        ../../../../interface/vmcs_host/linux/vcfilesys.c 

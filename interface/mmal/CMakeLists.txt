@@ -12,7 +12,6 @@ add_subdirectory(util)
 add_subdirectory(vc)
 add_subdirectory(components)
 add_subdirectory(openmaxil)
-add_subdirectory(client)
 
 target_link_libraries(mmal mmal_core mmal_util mmal_vc_client vcos mmal_components)
 
@@ -40,7 +39,4 @@ install(FILES
    DESTINATION include/interface/mmal
 )
 
-# Test apps
-if(BUILD_MMAL_APPS)
-add_subdirectory(test)
-endif(BUILD_MMAL_APPS)
+
